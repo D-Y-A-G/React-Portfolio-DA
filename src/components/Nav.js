@@ -1,4 +1,7 @@
 import React from "react";
+import burgerNav from "./js/script";
+import resume from "./images/Resume-Denis-Arce.pdf";
+
 
 export default function Nav() {
   return (
@@ -15,7 +18,7 @@ export default function Nav() {
           aria-expanded="false"
           data-target="navMenu"
           id="burger"
-          onClick={["toggleBurger()"]} //need to fix this onclick and add source code for burger icon
+          onClick={burgerNav} //need to fix this onclick and add source code for burger icon
         >
           <span aria-hidden="true"></span>
           <span aria-hidden="true"></span>
@@ -70,7 +73,8 @@ export default function Nav() {
           <div className="buttons">
             <a
               className="button is-danger"
-              href={"/assets/images/Resume-Denis-Arce.pdf"}
+              href={resume}
+            
             >
               Resume
             </a>

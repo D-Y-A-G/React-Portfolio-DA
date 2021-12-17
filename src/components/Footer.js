@@ -7,7 +7,7 @@ export default function Footer() {
         <p>
           Portfolio by
           <strong>
-            <a href="https://github.com/D-Y-A-G">&#9812 Denis Arce &emsp;</a>
+            <a href="https://github.com/D-Y-A-G">&#9812; Denis Arce &emsp;</a>
           </strong>
           LinkedIn
           <a

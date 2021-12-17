@@ -1,6 +1,115 @@
-* {
-  font-family: sans-serif;
-  margin: 0;
-  box-sizing: border-box;
-  padding: 0%;
+nav {
+  font-size: 1.5rem;
+  font-weight: 100;
+}
+.title,
+.subtitle {
+  font-size: 2rem;
+  /* margin: 90px; */
+  /* position: relative;
+  left: 400px; */
+  font-stretch: semi-expanded;
+}
+
+.project-cards {
+ display: inline-block;
+ height:fit-content;
+}
+
+#name {
+  font-size: 2rem;
+  font-weight: bolder;
+  float: right;
+}
+
+#intro {
+  position: relative;
+  left: 100px;
+}
+
+.description {
+  display: block;
+  font-size: 1.5rem;
+  color: rgb(170, 170, 170);
+  width: 80%;
+  margin: 60px;
+}
+
+/* #recentWork {
+  position: relative;
+  font-size: 2rem;
+  color: #fff;
+  text-align: right;
+  margin-right: 300px;
+  padding-top: 20px;
+  padding-bottom: 0%;
+  font-weight: bolder;
+  letter-spacing: 1px;
+} */
+
+h3 {
+  background-image: url(https://media1.giphy.com/media/SYut2vjrxt87C/giphy.gif?cid=ecf05e47huy60ez4vr3cdrdyztt0h14gtjue9az212a4wrdl&rid=giphy.gif&ct=g);
+  background-size: cover;
+  color: transparent;
+  -moz-background-clip: text;
+  -webkit-background-clip: text;
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  line-height: 0.8;
+  margin: 10px 0;
+  font-weight: bolder;
+}
+
+#project-card {
+  /* width: 25%; */
+}
+
+#recentWork {
+  align-items: center;
+  text-align: center;
+  margin-bottom: 100px;
+}
+
+#k9cupid {
+  float: left;
+}
+
+#hello {
+  position: absolute;
+  left: 140px;
+}
+
+#concert-tracker {
+  position: relative;
+  left: 25%;
+}
+
+#tech-blog {
+  float: left;
+}
+
+#portrait {
+  margin: 0px;
+  float: left;
+  /* position: relative; */
+  top: -15px;
+  position: relative;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* #project-one {
+  box-shadow: 5px 5px gray;
+} */
+
+#contact-me {
+  display: inline-block;
+  bottom: 0;
+  width: 100%;
+  height: 1.5rem;
+  line-height: 25px;
+  padding-top: 10px;
+  padding-bottom: 70px;
+  font-weight: 600px;
 }
