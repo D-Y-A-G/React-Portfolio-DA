@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/React-Portfolio-DA/static/css/main.6e5a025d.chunk.css",
+    "main.js": "/React-Portfolio-DA/static/js/main.5922386e.chunk.js",
+    "main.js.map": "/React-Portfolio-DA/static/js/main.5922386e.chunk.js.map",
+    "runtime-main.js": "/React-Portfolio-DA/static/js/runtime-main.f201a08e.js",
+    "runtime-main.js.map": "/React-Portfolio-DA/static/js/runtime-main.f201a08e.js.map",
+    "static/js/2.59d8b398.chunk.js": "/React-Portfolio-DA/static/js/2.59d8b398.chunk.js",
+    "static/js/2.59d8b398.chunk.js.map": "/React-Portfolio-DA/static/js/2.59d8b398.chunk.js.map",
+    "index.html": "/React-Portfolio-DA/index.html",
+    "static/css/main.6e5a025d.chunk.css.map": "/React-Portfolio-DA/static/css/main.6e5a025d.chunk.css.map",
+    "static/js/2.59d8b398.chunk.js.LICENSE.txt": "/React-Portfolio-DA/static/js/2.59d8b398.chunk.js.LICENSE.txt",
+    "static/media/DA-lowres.701499ad.jpg": "/React-Portfolio-DA/static/media/DA-lowres.701499ad.jpg",
+    "static/media/concert-tracker.bbc9bb85.jpg": "/React-Portfolio-DA/static/media/concert-tracker.bbc9bb85.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.f201a08e.js",
+    "static/js/2.59d8b398.chunk.js",
+    "static/css/main.6e5a025d.chunk.css",
+    "static/js/main.5922386e.chunk.js"
+  ]
+}
