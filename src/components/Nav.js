@@ -2,7 +2,6 @@ import React from "react";
 import burgerNav from "./js/script";
 import resume from "./images/Resume-Denis-Arce.pdf";
 
-
 export default function Nav() {
   return (
     <div className="navbar-end">
@@ -54,7 +53,7 @@ export default function Nav() {
               </a>
               <a className="navbar-item" href="mailto:dnsare21@gmail.com">
                 {" "}
-                Contact{" "}
+                Message Me!{" "}
               </a>
               <hr className="navbar-divider" />
               <a
@@ -71,11 +70,7 @@ export default function Nav() {
       <div className="navbar-end">
         <div className="navbar-item">
           <div className="buttons">
-            <a
-              className="button is-danger"
-              href={resume}
-            
-            >
+            <a className="button is-danger" href={resume}>
               Resume
             </a>
             {/*  <a class="button is-danger"> Login </a> */}

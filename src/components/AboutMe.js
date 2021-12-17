@@ -7,7 +7,7 @@ export default function AboutMe() {
       <figure class="is-fullwidth" id="portrait">
         <img class="is-rounded" src={denisImage} alt="Denis Portrait" />
       </figure>
-      <section class="section" id="hello">
+      <section class="section " id="hello">
         <div class="container columns is-mobile " id="intro">
           <p class="title" style={{ fontSize: "4vw" }}>
             Hello,
@@ -25,17 +25,19 @@ export default function AboutMe() {
       <section
         id="about-me"
         className="columns is-mobile"
-        style={{ fontSize: "1vw" }}
+        style={{ fontSize: "1vw", paddingTop: "40px" }}
       >
         <div class="card description my-0">
-          <div class="card-content about-me" style={{ fontWeight: "650" }}>
+          <div
+            class="card-content about-me"
+            style={{ fontWeight: "450", fontSize: "3vw" }}
+          >
             ABOUT ME . . .
-            <div class="content" style={{ color: "gray" }}>
+            <div class="content" style={{ color: "gray", fontSize: "3vw" }}>
               Jr. Full Stack Web Developer with Business Management and Finance
-              experience. Educated at University of Texas at San Antonio.
-              <br />
-              Skills in HTML, CSS, and JavaScript and strengths in managing
-              teams, learning technology, creativity, and teamwork.
+              experience. Educated at University of Texas at San Antonio. Skills
+              in HTML, CSS, and JavaScript and strengths in managing teams,
+              learning technology, creativity, and teamwork.
             </div>
           </div>
         </div>
