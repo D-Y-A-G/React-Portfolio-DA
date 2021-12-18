@@ -8,7 +8,10 @@ export default function projectCards() {
   //can pass props here if necessary
 
   return (
-    <div className="main-container project-cards columns is-12" id="project-cards">
+    <div
+      className="main-container project-cards columns is-12"
+      id="project-cards"
+    >
       <div className="card " id="recentWork">
         <div className="card-image">
           <figure className="image is-5by10">
@@ -36,8 +39,8 @@ export default function projectCards() {
 
           <div class="content">
             Front-end application that allows users to search a band/artist for
-            the most upcoming event, provide them with ticket information as
-            well as music video resources.
+            upcoming events, provide them with ticket information and top music
+            videos.
             <a href="https://github.com/D-Y-A-G/pj1-sam-dav-den">
               #Github-repo
             </a>{" "}
