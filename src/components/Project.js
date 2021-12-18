@@ -1,54 +1,48 @@
 import React from "react";
 import { projectData } from "../projectsSeed";
 
-
 export default function projectCards() {
   //can pass props here if necessary
 
   return (
     <div
-      className="main-container project-cards columns is-12" // {projects.map(projectData) => ("write code here for html and using seed file")}
+      className="main-container project-cards columns is-12" // {projectData.map(projectData) => ("write code here for html and using seed file")}
       id="project-cards"
     >
-      <div className="card " id="recentWork">
-        <div className="card-image">
-          <figure className="image is-5by10">
-            <img src={projectData.image} alt="concert picture" />
-          </figure>
-        </div>
-        <div className="card-content">
-          <div className="media">
-            <div className="media-left is-rounded">
-              {/* <figure className="image is-48x48 ">
+      {projectData.map((project) => (
+        <div className="card " id="recentWork">
+          <div className="card-image">
+            <figure className="image is-5by10">
+              <img src={project.image} alt="concert picture" />
+            </figure>
+          </div>
+          <div className="card-content">
+            <div className="media">
+              <div className="media-left is-rounded">
+                {/* <figure className="image is-48x48 ">
                 <img
                   className="is-rounded"
                   src={denisPortrait}
                   alt="Denis Portrait"
                 />
               </figure> */}
+              </div>
+              <div className="media-content">
+                <p className="title is-4">{project.title}</p>
+                <p className="subtitle is-6">{project.subtitle}</p>
+              </div>
             </div>
-            <div className="media-content">
-              <p className="title is-4">{projectData.title}</p>
-              <p className="subtitle is-6">
-                {projectData.subtitle}
-              </p>
-            </div>
-          </div>
 
-          <div class="content">
-            {projectData.description}
-            <a href={projectData.repo}>
-              #Github-repo
-            </a>{" "}
-            <a href={projectData.demo}>& Demo App!</a>
-            <br />
-            {/* <time datetime="2016-1-1">11:09 PM - 1 Jan 2016</time> */}
+            <div class="content">
+              {project.description}
+              <a href={project.repo}>#Github-repo</a>{" "}
+              <a href={project.demo}>& Demo App!</a>
+              <br />
+              {/* <time datetime="2016-1-1">11:09 PM - 1 Jan 2016</time> */}
+            </div>
           </div>
         </div>
-      </div>
-
-     
-
+      ))}
     </div>
   );
 }
