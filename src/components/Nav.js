@@ -5,7 +5,7 @@ import resume from "./images/Resume-Denis-Arce.pdf";
 export default function Nav() {
   return (
     <div className="navbar-end">
-      <div className="navbar-brand ">
+      <div className="navbar-brand navbar-end ">
         <a className="navbar-item " href="https://github.com/dnsarce21">
           {/* <img src="./assets/img/name.jpg" /> */}
         </a>
@@ -29,13 +29,13 @@ export default function Nav() {
         <div className="navbar-start">
           <a
             className="navbar-item"
-            href="https://www.linkedin.com/in/denis-arce-81163a6b/"
+            href="/"
           >
             {" "}
             Home{" "}
           </a>
 
-          <a className="navbar-item" href="#recentWork">
+          <a className="navbar-item" href="#/portfolio">
             {" "}
             Portfolio{" "}
           </a>

@@ -1,5 +1,6 @@
 import React from "react";
 import Nav from "./Nav";
+import About from "./AboutMe";
 
 export default function Header() {
   return (
@@ -9,7 +10,6 @@ export default function Header() {
         role="navigation"
         aria-label="main navigation"
       >
-        {/* <h1 className="has-text-weight-bold">Denis Arce</h1> */}
         <Nav />
       </nav>
     </div>
