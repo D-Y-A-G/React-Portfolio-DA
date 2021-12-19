@@ -51,6 +51,9 @@ You don’t have to ever use `eject`. The curated feature set is suitable for sm
 
 [Portfolio](https://d-y-a-g.github.io/React-Portfolio-DA/)
 
+Image: 
+![image](https://user-images.githubusercontent.com/84104912/146661422-0c68e15c-18ef-4ee4-bd99-b9baa51e63e5.png)
+
 ## **💬Questions**
 
 ```md
