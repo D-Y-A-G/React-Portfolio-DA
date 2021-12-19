@@ -2,6 +2,7 @@ import React from "react";
 import burgerNav from "./js/script";
 import resume from "./images/Resume-Denis-Arce.pdf";
 
+
 export default function Nav({ currentPage, handlePageChange }) {
   return (
     <div className="navbar-end">
@@ -30,7 +31,7 @@ export default function Nav({ currentPage, handlePageChange }) {
           <a
             className="navbar-item"
             {...(currentPage === "Home" ? "nav-link active" : "nav-link")}
-            href="#/home"
+            href="#home"
             onClick={() => handlePageChange("Home")}
           >
             Home
@@ -38,7 +39,8 @@ export default function Nav({ currentPage, handlePageChange }) {
 
           <a
             className="navbar-item"
-            href="#/Portfolio"
+            {...(currentPage === "Home" ? "nav-link active" : "nav-link")}
+            href="#Portfolio"
             onClick={() => handlePageChange("Projects")}
           >
             Portfolio
@@ -48,7 +50,11 @@ export default function Nav({ currentPage, handlePageChange }) {
             <a className="navbar-link"> More </a>
 
             <div className="navbar-dropdown">
-              <a className="navbar-item" href="about-me">
+              <a
+                className="navbar-item"
+                {...(currentPage === "Home" ? "nav-link active" : "nav-link")}
+                href="#about"
+              >
                 About me
               </a>
               <a className="navbar-item" href="https://github.com/D-Y-A-G">
@@ -56,7 +62,8 @@ export default function Nav({ currentPage, handlePageChange }) {
               </a>
               <a
                 className="navbar-item"
-                href="contact"
+                {...(currentPage === "Home" ? "nav-link active" : "nav-link")}
+                href="#contact"
                 onClick={() => handlePageChange("Contact")}
               >
                 Message Me!

@@ -13,7 +13,7 @@ export default function projectCards() {
         <div className="card " id="recentWork">
           <div className="card-image">
             <figure className="image is-5by10">
-              <img src={project.image} alt="concert picture" />
+              <img src={projectData.image} alt="concert picture" />
             </figure>
           </div>
           <div className="card-content">
@@ -51,7 +51,7 @@ export default function projectCards() {
         <div className="card">
           <div className="card-image">
             <figure className="image is-5by10">
-              <img src={concertTrackerImage} alt="concert image" />
+              <img src={concertTrackerImage} alt="concert picture" />
             </figure>
           </div>
           <div className="card-content" id="app-details">
