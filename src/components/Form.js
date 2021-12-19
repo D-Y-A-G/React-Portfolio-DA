@@ -1,102 +1,94 @@
-import React from "react";
+import React, { useState } from "react";
+import "../App.css";
 
-export default function messageMe() {
+// Here we import a helper function that will check if the email is valid
+import { checkPassword, validateEmail } from "../utils/helpers";
+
+function Form() {
+  // Create state variables for the fields in the form
+  // We are also setting their initial values to an empty string
+  const [email, setEmail] = useState("");
+  const [userName, setUserName] = useState("");
+  const [password, setPassword] = useState("");
+  const [errorMessage, setErrorMessage] = useState("");
+
+  const handleInputChange = (e) => {
+    // Getting the value and name of the input which triggered the change
+    const { target } = e;
+    const inputType = target.name;
+    const inputValue = target.value;
+
+    // Based on the input type, we set the state of either email, username, and password
+    if (inputType === "email") {
+      setEmail(inputValue);
+    } else if (inputType === "userName") {
+      setUserName(inputValue);
+    } else {
+      setPassword(inputValue);
+    }
+  };
+
+  const handleFormSubmit = (e) => {
+    // Preventing the default behavior of the form submit (which is to refresh the page)
+    e.preventDefault();
+
+    // First we check to see if the email is not valid or if the userName is empty. If so we set an error message to be displayed on the page.
+    if (!validateEmail(email) || !userName) {
+      setErrorMessage("Email or username is invalid");
+      // We want to exit out of this code block if something is wrong so that the user can correct it
+      return;
+      // Then we check to see if the password is not valid. If so, we set an error message regarding the password.
+    }
+    if (!checkPassword(password)) {
+      setErrorMessage(
+        `Choose a more secure password for the account: ${userName}`
+      );
+      return;
+    }
+    alert(`Hello ${userName}`);
+
+    // If everything goes according to plan, we want to clear out the input after a successful registration.
+    setUserName("");
+    setPassword("");
+    setEmail("");
+  };
+
   return (
-    <div className="main-container">
-      <div class="field">
-        <label class="label">Name</label>
-        <div class="control">
-          <input class="input" type="text" placeholder="Text input" />
+    <div>
+      <p>Hello {userName}</p>
+      <form className="form">
+        <input
+          value={email}
+          name="email"
+          onChange={handleInputChange}
+          type="email"
+          placeholder="email"
+        />
+        <input
+          value={userName}
+          name="Name"
+          onChange={handleInputChange}
+          type="text"
+          placeholder="name"
+        />
+        <input
+          value={password}
+          name="password"
+          onChange={handleInputChange}
+          type="password"
+          placeholder="Password"
+        />
+        <button type="button" onClick={handleFormSubmit}>
+          Submit
+        </button>
+      </form>
+      {errorMessage && (
+        <div>
+          <p className="error-text">{errorMessage}</p>
         </div>
-      </div>
-
-      <div class="field">
-        <label class="label">Username</label>
-        <div class="control has-icons-left has-icons-right">
-          <input
-            class="input is-success"
-            type="text"
-            placeholder="Text input"
-            value="bulma"
-          />
-          <span class="icon is-small is-left">
-            <i class="fas fa-user"></i>
-          </span>
-          <span class="icon is-small is-right">
-            <i class="fas fa-check"></i>
-          </span>
-        </div>
-        <p class="help is-success">This username is available</p>
-      </div>
-
-      <div class="field">
-        <label class="label">Email</label>
-        <div class="control has-icons-left has-icons-right">
-          <input
-            class="input is-danger"
-            type="email"
-            placeholder="Email input"
-            value="hello@"
-          />
-          <span class="icon is-small is-left">
-            <i class="fas fa-envelope"></i>
-          </span>
-          <span class="icon is-small is-right">
-            <i class="fas fa-exclamation-triangle"></i>
-          </span>
-        </div>
-        <p class="help is-danger">This email is invalid</p>
-      </div>
-
-      <div class="field">
-        <label class="label">Subject</label>
-        <div class="control">
-          <div class="select">
-            <select>
-              <option>Select dropdown</option>
-              <option>With options</option>
-            </select>
-          </div>
-        </div>
-      </div>
-
-      <div class="field">
-        <label class="label">Message</label>
-        <div class="control">
-          <textarea class="textarea" placeholder="Textarea"></textarea>
-        </div>
-      </div>
-
-      <div class="field">
-        <div class="control">
-          <label class="checkbox">
-            <input type="checkbox" />I agree to the{" "}
-            <a href="#">terms and conditions</a>
-          </label>
-        </div>
-      </div>
-
-      <div class="field">
-        <div class="control">
-          <label class="radio">
-            <input type="radio" name="question" />
-            Yes
-          </label>
-          <label class="radio">
-            <input type="radio" name="question" />
-            No
-          </label>
-        </div>
-      </div>
-
-      <div class="field is-grouped">
-        <div class="control">
-          <button class="button is-link">Submit</button>
-        </div>
-        <div class="control">
-          <button class="button is-link is-light">Cancel</button>
-        </div>
-      </div>
+      )}
     </div>
   );
 }
+
+export default Form;

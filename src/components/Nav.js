@@ -17,7 +17,7 @@ export default function Nav({currentPage, handlePageChange}) {
           aria-expanded="false"
           data-target="navMenu"
           id="burger"
-          onClick={burgerNav} //need to fix this onclick and add source code for burger icon
+          onClick={burgerNav} 
         >
           <span aria-hidden="true"></span>
           <span aria-hidden="true"></span>
@@ -30,20 +30,20 @@ export default function Nav({currentPage, handlePageChange}) {
           <a
             className="navbar-item"
             {...(currentPage === "Home" ? "nav-link active" : "nav-link")}
-            href="#home"
+            href="#/home"
             onClick={() => handlePageChange("Home")}
           >
-            {" "}
-            Home{" "}
+            
+            Home
           </a>
 
           <a
             className="navbar-item"
-            href="#portfolio"
-            onClick={() => handlePageChange("Home")}
+            href="#/Portfolio"
+            onClick={() => handlePageChange("Projects")}
           >
-            {" "}
-            Portfolio{" "}
+            
+            Portfolio
           </a>
 
           <div className="navbar-item has-dropdown is-hoverable">
@@ -52,27 +52,26 @@ export default function Nav({currentPage, handlePageChange}) {
             <div className="navbar-dropdown">
               <a
                 className="navbar-item"
-                href="#about"
-                onClick={() => handlePageChange("About")}
+                href="#about-me"
               >
-                {" "}
-                About me{" "}
+               
+                About me
               </a>
               <a className="navbar-item" href="https://github.com/D-Y-A-G">
                 GitHub
               </a>
               <a
                 className="navbar-item"
-                href="#contact"
+                href="#/contact"
                 onClick={() => handlePageChange("Contact")}
               >
-                {" "}
-                Message Me!{" "}
+                
+                Message Me!
               </a>
               <hr className="navbar-divider" />
               <a
                 className="navbar-item"
-                href={"https://www.linkedin.com/in/denis-arce-81163a6b/"}
+                href="#/Contact"
               >
                 LinkedIn
               </a>

@@ -25,7 +25,7 @@ export default function AboutMe() {
       <section
         id="about-me"
         className="columns is-mobile"
-        style={{ fontSize: "1vw", paddingTop: "40px" }}
+        style={{ fontSize: "1vw", paddingTop: "40px", paddingBottom: "40px" }}
       >
         <div class="card description my-0">
           <div

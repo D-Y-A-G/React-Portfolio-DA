@@ -22,6 +22,7 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 });
 
+
 // const toggleBurger = () => {
 //   let burgerIcon = document.getElementById("burger");
 //   let dropMenu = document.getElementById("navMenu");

@@ -118,3 +118,15 @@ h3 {
   padding-bottom: 70px;
   font-weight: 600px;
 }
+
+.form {
+  margin: 20px;
+}
+
+.form input {
+  display: block;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  width: 100%;
+}
+
