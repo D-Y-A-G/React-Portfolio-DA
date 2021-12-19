@@ -2,7 +2,7 @@ import React from "react";
 import burgerNav from "./js/script";
 import resume from "./images/Resume-Denis-Arce.pdf";
 
-export default function Nav({currentPage, handlePageChange}) {
+export default function Nav({ currentPage, handlePageChange }) {
   return (
     <div className="navbar-end">
       <div className="navbar-brand navbar-end ">
@@ -17,7 +17,7 @@ export default function Nav({currentPage, handlePageChange}) {
           aria-expanded="false"
           data-target="navMenu"
           id="burger"
-          onClick={burgerNav} 
+          onClick={burgerNav}
         >
           <span aria-hidden="true"></span>
           <span aria-hidden="true"></span>
@@ -33,7 +33,6 @@ export default function Nav({currentPage, handlePageChange}) {
             href="#/home"
             onClick={() => handlePageChange("Home")}
           >
-            
             Home
           </a>
 
@@ -42,7 +41,6 @@ export default function Nav({currentPage, handlePageChange}) {
             href="#/Portfolio"
             onClick={() => handlePageChange("Projects")}
           >
-            
             Portfolio
           </a>
 
@@ -50,11 +48,7 @@ export default function Nav({currentPage, handlePageChange}) {
             <a className="navbar-link"> More </a>
 
             <div className="navbar-dropdown">
-              <a
-                className="navbar-item"
-                href="#about-me"
-              >
-               
+              <a className="navbar-item" href="about-me">
                 About me
               </a>
               <a className="navbar-item" href="https://github.com/D-Y-A-G">
@@ -62,16 +56,15 @@ export default function Nav({currentPage, handlePageChange}) {
               </a>
               <a
                 className="navbar-item"
-                href="#/contact"
+                href="contact"
                 onClick={() => handlePageChange("Contact")}
               >
-                
                 Message Me!
               </a>
               <hr className="navbar-divider" />
               <a
                 className="navbar-item"
-                href="#/Contact"
+                href="https://www.linkedin.com/in/denis-arce-81163a6b/"
               >
                 LinkedIn
               </a>
