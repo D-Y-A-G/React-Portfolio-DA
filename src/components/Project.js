@@ -12,8 +12,8 @@ export default function projectCards() {
       {projectData.map((project) => (
         <div className="card " id="recentWork">
           <div className="card-image">
-            <figure className="image is-5by10" >
-              <img src={project.image} key={project.image} alt="application picture" />
+            <figure className="image is-5by10">
+              <img src={project.image} alt="application preview" />
             </figure>
           </div>
           <div className="card-content">
