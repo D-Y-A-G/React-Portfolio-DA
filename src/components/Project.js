@@ -6,7 +6,7 @@ export default function projectCards() {
 
   return (
     <div
-      className="main-container project-cards columns is-12" // {projectData.map(projectData) => ("write code here for html and using seed file")}
+      className="main-container project-cards columns is-6" // {projectData.map(projectData) => ("write code here for html and using seed file")}
       id="project-cards"
     >
       {projectData.map((project) => (
@@ -38,7 +38,6 @@ export default function projectCards() {
               <a href={project.repo}>#Github-repo</a>{" "}
               <a href={project.demo}>& Demo App!</a>
               <br />
-              {/* <time datetime="2016-1-1">11:09 PM - 1 Jan 2016</time> */}
             </div>
           </div>
         </div>

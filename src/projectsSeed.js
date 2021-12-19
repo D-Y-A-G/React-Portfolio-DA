@@ -1,5 +1,6 @@
 export const projectData = [
   {
+    id: 1,
     image: "./components/images/concert-tracker.jpg",
     title: "Concert Tracker",
     subtitle: "Find your favorite band and concert info!",
@@ -10,6 +11,7 @@ export const projectData = [
   },
 
   {
+    id: 2,
     image: "./components/images/k9cupid.jpg",
     title: "K9Cupid",
     subtitle: "A social app for human's best friends!",
@@ -20,6 +22,7 @@ export const projectData = [
   },
 
   {
+    id: 3,
     image: "./components/images/e-commerce.png",
     title: "E-Commerce",
     subtitle: "A back-end e-commerce website for a clothes store.",
@@ -29,4 +32,3 @@ export const projectData = [
     demo: "https://watch.screencastify.com/v/iI7bmrt6TfZticK6IEAG",
   },
 ];
-

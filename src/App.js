@@ -19,7 +19,6 @@ function App() {
       <Home />
       <AboutMe />
       <Footer />
-      <Router exact path="/portfolio" component={Portfolio}></Router>
     </div>
   );
 }
