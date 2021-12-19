@@ -31,4 +31,37 @@ export const projectData = [
     repo: "https://github.com/D-Y-A-G/Tech-Blog-DA",
     demo: "https://watch.screencastify.com/v/iI7bmrt6TfZticK6IEAG",
   },
+
+  {
+    id: 4,
+    image: "./components/images/note-taker.png",
+    title: "Note-Taker",
+    subtitle: "Easy to use Note Taker, Lets you add and delete notes",
+    description:
+      "An application called Note Taker that can be used to write and save notes. This application will use an Express.js back end and will save and retrieve note data from a JSON file.",
+    repo: "https://github.com/D-Y-A-G/Note-Taker-DA",
+    demo: "https://note-taker-da.herokuapp.com/",
+  },
+
+  {
+    id: 5,
+    image: "./components/images/workout-tracker.png",
+    title: "Workout-Tracker",
+    subtitle: "Track your workouts with an easy to use fitness application",
+    description:
+      "A simple and convenient workout tracker to help fitness enthusiasts reach their desired fitness goals faster by keeping tracks of their workout progress.",
+    repo: "https://github.com/D-Y-A-G/Workout-Tracker-DA",
+    demo: "https://workout-tracker-denis.herokuapp.com/?id=61b4e86ec9ec460016041a80",
+  },
+  {
+    id: 6,
+    image: "./components/images/budget-tracker.png",
+    title: "Budget-Tracker",
+    subtitle:
+      "An application developed to help users keep track of their expenses.",
+    description:
+      "An application to help users track expenses and deposits to their budget with online/offline functionality..",
+    repo: "https://github.com/D-Y-A-G/Budget-Tracker-DA",
+    demo: "https://budget-tracker-da.herokuapp.com/",
+  },
 ];

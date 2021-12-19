@@ -6,14 +6,14 @@ export default function projectCards() {
 
   return (
     <div
-      className="main-container project-cards columns is-6" // {projectData.map(projectData) => ("write code here for html and using seed file")}
+      className="main-container project-cards" // {projectData.map(projectData) => ("write code here for html and using seed file")}
       id="project-cards"
     >
       {projectData.map((project) => (
         <div className="card " id="recentWork">
           <div className="card-image">
-            <figure className="image is-5by10">
-              <img src={projectData.image} alt="concert picture" />
+            <figure className="image is-5by10" >
+              <img src={project.image} key={project.image} alt="application picture" />
             </figure>
           </div>
           <div className="card-content">
