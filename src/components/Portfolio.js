@@ -3,7 +3,7 @@ import Project from "./Project";
 
 export default function projects(props) {
   return (
-    <div>
+    <div className="m-9">
       <Project />
     </div>
   );

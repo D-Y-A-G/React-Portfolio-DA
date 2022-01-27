@@ -1,7 +1,6 @@
 import React from "react";
 import burgerNav from "./js/script";
-import resume from "./images/Resume-Denis-Arce.pdf";
-
+import resume from "./images/DenisArceResumeWebDev2022.pdf";
 
 export default function Nav({ currentPage, handlePageChange }) {
   return (
@@ -18,7 +17,7 @@ export default function Nav({ currentPage, handlePageChange }) {
           aria-expanded="false"
           data-target="navMenu"
           id="burger"
-          onClick={burgerNav}
+          onClick={() => burgerNav}
         >
           <span aria-hidden="true"></span>
           <span aria-hidden="true"></span>
