@@ -1,14 +1,7 @@
-import concertTracker from "./components/images/concert-tracker.jpg";
-import k9Cupid from "./components/images/k9cupid.jpg";
-import fix from "./components/images/FTF.jpg";
-import noteTaker from "./components/images/note-taker.png";
-import workOut from "./components/images/workout-tracker.png";
-import budget from "./components/images/budget-tracker.png";
-
 export const projectData = [
   {
     id: 1,
-    image: concertTracker,
+    image: "./components/images/concert-tracker.jpg",
     title: "Concert Tracker",
     subtitle: "Find your favorite band and concert info!",
     description:
@@ -19,7 +12,7 @@ export const projectData = [
 
   {
     id: 2,
-    image: k9Cupid,
+    image: "./components/images/k9cupid.jpg",
     title: "K9Cupid",
     subtitle: "A social app for human's best friends!",
     description:
@@ -30,19 +23,18 @@ export const projectData = [
 
   {
     id: 3,
-    image: fix,
-    title: "Food-Truck-Fix",
-    subtitle:
-      "A solution for Food-Truck-Owners to built custom mobile applications",
+    image: "./components/images/e-commerce.png",
+    title: "E-Commerce",
+    subtitle: "A back-end e-commerce website for a clothes store.",
     description:
-      "An application built to empower small business owners to customize their own website or application using the latest technologies available.",
-    repo: "https://github.com/D-Y-A-G/food-truck-app-creator",
-    demo: "https://food-truck-fix.herokuapp.com/",
+      "A back end application for an e-commerce clothing website that uses latest technologies to compete with other e-commerce companies.",
+    repo: "https://github.com/D-Y-A-G/Tech-Blog-DA",
+    demo: "https://watch.screencastify.com/v/iI7bmrt6TfZticK6IEAG",
   },
 
   {
     id: 4,
-    image: noteTaker,
+    image: "./components/images/note-taker.png",
     title: "Note-Taker",
     subtitle: "Easy to use Note Taker, Lets you add and delete notes",
     description:
@@ -53,7 +45,7 @@ export const projectData = [
 
   {
     id: 5,
-    image: workOut,
+    image: "./components/images/workout-tracker.png",
     title: "Workout-Tracker",
     subtitle: "Track your workouts with an easy to use fitness application",
     description:
@@ -63,7 +55,7 @@ export const projectData = [
   },
   {
     id: 6,
-    image: budget,
+    image: "./components/images/budget-tracker.png",
     title: "Budget-Tracker",
     subtitle:
       "An application developed to help users keep track of their expenses.",
