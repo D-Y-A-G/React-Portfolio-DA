@@ -1,7 +1,6 @@
 import React from "react";
 import burgerNav from "./js/script";
-import resume from "./images/Resume-Denis-Arce.pdf";
-
+import resume from "./images/D.Arce.pdf";
 
 export default function Nav({ currentPage, handlePageChange }) {
   return (
