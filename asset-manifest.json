@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/React-Portfolio-DA/static/css/main.d8bcf76a.chunk.css",
-    "main.js": "/React-Portfolio-DA/static/js/main.3f955ee3.chunk.js",
-    "main.js.map": "/React-Portfolio-DA/static/js/main.3f955ee3.chunk.js.map",
+    "main.js": "/React-Portfolio-DA/static/js/main.685687ae.chunk.js",
+    "main.js.map": "/React-Portfolio-DA/static/js/main.685687ae.chunk.js.map",
     "runtime-main.js": "/React-Portfolio-DA/static/js/runtime-main.f201a08e.js",
     "runtime-main.js.map": "/React-Portfolio-DA/static/js/runtime-main.f201a08e.js.map",
     "static/js/2.522187ea.chunk.js": "/React-Portfolio-DA/static/js/2.522187ea.chunk.js",
@@ -10,13 +10,20 @@
     "index.html": "/React-Portfolio-DA/index.html",
     "static/css/main.d8bcf76a.chunk.css.map": "/React-Portfolio-DA/static/css/main.d8bcf76a.chunk.css.map",
     "static/js/2.522187ea.chunk.js.LICENSE.txt": "/React-Portfolio-DA/static/js/2.522187ea.chunk.js.LICENSE.txt",
+    "static/media/D.Arce.b37cee98.pdf": "/React-Portfolio-DA/static/media/D.Arce.b37cee98.pdf",
     "static/media/DA-lowres.701499ad.jpg": "/React-Portfolio-DA/static/media/DA-lowres.701499ad.jpg",
-    "static/media/Resume-Denis-Arce.0a4ce461.pdf": "/React-Portfolio-DA/static/media/Resume-Denis-Arce.0a4ce461.pdf"
+    "static/media/FTF.f3a49556.jpg": "/React-Portfolio-DA/static/media/FTF.f3a49556.jpg",
+    "static/media/budget-tracker.87c1f5d0.png": "/React-Portfolio-DA/static/media/budget-tracker.87c1f5d0.png",
+    "static/media/concert-tracker.bbc9bb85.jpg": "/React-Portfolio-DA/static/media/concert-tracker.bbc9bb85.jpg",
+    "static/media/e-commerce.cca2fa84.png": "/React-Portfolio-DA/static/media/e-commerce.cca2fa84.png",
+    "static/media/k9cupid.d6fb0f78.jpg": "/React-Portfolio-DA/static/media/k9cupid.d6fb0f78.jpg",
+    "static/media/note-taker.6d52ee3b.png": "/React-Portfolio-DA/static/media/note-taker.6d52ee3b.png",
+    "static/media/workout-tracker.665ad93a.png": "/React-Portfolio-DA/static/media/workout-tracker.665ad93a.png"
   },
   "entrypoints": [
     "static/js/runtime-main.f201a08e.js",
     "static/js/2.522187ea.chunk.js",
     "static/css/main.d8bcf76a.chunk.css",
-    "static/js/main.3f955ee3.chunk.js"
+    "static/js/main.685687ae.chunk.js"
   ]
 }
