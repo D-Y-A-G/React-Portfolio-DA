@@ -30,10 +30,10 @@ export default function AboutMe() {
         <div class="card description my-0">
           <div
             class="card-content about-me"
-            style={{ fontWeight: "450", fontSize: "3vw" }}
+            style={{ fontWeight: "450", fontSize: "2.5vw" }}
           >
             ABOUT ME . . .
-            <div class="content" style={{ color: "gray", fontSize: "3vw" }}>
+            <div class="content" style={{ color: "gray", fontSize: "2.5vw" }}>
               Jr. Full Stack Web Developer with Business Management and Finance
               experience. Educated at University of Texas at San Antonio. Skills
               in HTML, CSS, and JavaScript and strengths in managing teams,

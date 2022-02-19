@@ -1,99 +1,82 @@
-import React, { useState } from "react";
-import "../App.css";
+import React from "react";
 
-// Here we import a helper function that will check if the email is valid
-import { validateEmail } from "../utils/helpers";
-
-function Form() {
-  // Create state variables for the fields in the form
-  // We are also setting their initial values to an empty string
-  const [email, setEmail] = useState("");
-  const [name, setName] = useState("");
-  const [message, setMessage] = useState("");
-  const [errorMessage, setErrorMessage] = useState("");
-
-  const handleInputChange = (e) => {
-    // Getting the value and name of the input which triggered the change
-    const { target } = e;
-    const inputType = target.name;
-    const inputValue = target.value;
-
-    // Based on the input type, we set the state of either email, username, and password
-    if (inputType === "name") {
-      setName(inputValue);
-    } else if (inputType === "email") {
-      setEmail(inputValue);
-    } else if (inputType === "message") {
-      setMessage(inputValue);
-    }
-  };
-
-  const handleFormSubmit = (e) => {
-    // Preventing the default behavior of the form submit (which is to refresh the page)
-    e.preventDefault();
-
-    // First we check to see if the email is not valid or if the userName is empty. If so we set an error message to be displayed on the page.
-    if (!validateEmail(email) || !name) {
-      setErrorMessage("Email or username is invalid");
-      // We want to exit out of this code block if something is wrong so that the user can correct it
-      return;
-      // Then we check to see if the password is not valid. If so, we set an error message regarding the password.
-    }
-    if (!message(message)) {
-      setErrorMessage(`${name} please include as message to submit`);
-      return;
-    }
-    alert(`Hello ${name}`);
-
-    // If everything goes according to plan, we want to clear out the input after a successful registration.
-    setName("");
-    setMessage("");
-    setEmail("");
-  };
-
+export default function Contact() {
   return (
-    <div className="field title fontWeight:600px">
-      <h1>Hello {name}</h1>
-      <form className="form">
-        <input
-          className="input"
-          value={email}
-          name="email"
-          onChange={handleInputChange}
-          type="email"
-          placeholder="email"
-        />
-        <input
-          className="input"
-          value={name}
-          name="name"
-          onChange={handleInputChange}
-          type="text"
-          placeholder="name"
-        />
-        <textarea
-          className="field control"
-          value={message}
-          name="message"
-          onChange={handleInputChange}
-          type="input"
-          placeholder="Type Message here!"
-        />
-        <button
-          className="button is-primary"
-          type="button"
-          onClick={handleFormSubmit}
-        >
-          Submit
-        </button>
-      </form>
-      {errorMessage && (
-        <div>
-          <p className="error-text">{errorMessage}</p>
+    <div>
+      <section className="hero is-fullheight">
+        <div className="hero-body">
+          <div className="container has-text-centered">
+            <div className="columns is-8 is-variable ">
+              <div className="column is-two-thirds has-text-left">
+                <h1 className="title is-1 contact__title">Contact Me!</h1>
+                <p className="is-size-4 contact__subtitle">
+                  Send me an email and I will get back to you.
+                </p>
+              </div>
+              <div className="column is-one-third has-text-left">
+                <form
+                  action="https://formsubmit.co/be9523e987b766cf08a9a52cdfed2eb7"
+                  method="POST"
+                  className="contact__form"
+                >
+                  <div className="field">
+                    <label htmlFor="" className="contact__label">
+                      Name
+                    </label>
+                    <input
+                      type="text"
+                      name="name"
+                      className="contact__input"
+                      required
+                    />
+                  </div>
+                  <div className="field">
+                    <label htmlFor="" className="contact__label">
+                      Email
+                    </label>
+                    <input
+                      type="email"
+                      name="email"
+                      className="contact__input"
+                      required
+                    />
+                  </div>
+                  <div className="field">
+                    <label htmlFor="" className="contact__label">
+                      Subject
+                    </label>
+                    <input
+                      type="text"
+                      name="_subject"
+                      className="contact__input"
+                      required
+                    />
+                  </div>
+                  <div className="field">
+                    <label htmlFor="" className="contact__label">
+                      Message
+                    </label>
+                    <textarea
+                      name="message"
+                      id=""
+                      cols="0"
+                      rows="7"
+                      className="contact__input"
+                      required
+                    ></textarea>
+                  </div>
+                  <div className="control">
+                    <button type="submit" className="button contact__button">
+                      Send Message
+                      <i className="uil uil-message button__icon"></i>
+                    </button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
         </div>
-      )}
+      </section>
     </div>
   );
 }
-
-export default Form;

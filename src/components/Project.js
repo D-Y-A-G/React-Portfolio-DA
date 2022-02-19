@@ -6,11 +6,11 @@ export default function projectCards() {
 
   return (
     <div
-      className="main-container project-cards" // {projectData.map(projectData) => ("write code here for html and using seed file")}
+      className="main-container project-cards columns is-multiline" // {projectData.map(projectData) => ("write code here for html and using seed file")}
       id="project-cards"
     >
       {projectData.map((project) => (
-        <div className="card " id="recentWork">
+        <div className="card column is-4" id="recentWork">
           <div className="card-image">
             <figure className="image is-5by10">
               <img src={project.image} alt="application preview" />

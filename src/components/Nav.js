@@ -49,13 +49,13 @@ export default function Nav({ currentPage, handlePageChange }) {
             <a className="navbar-link"> More </a>
 
             <div className="navbar-dropdown">
-              <a
+              {/* <a
                 className="navbar-item"
                 {...(currentPage === "Home" ? "nav-link active" : "nav-link")}
-                href="#about"
+                href="#About"
               >
                 About me
-              </a>
+              </a> */}
               <a className="navbar-item" href="https://github.com/D-Y-A-G">
                 GitHub
               </a>
