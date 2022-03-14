@@ -6,7 +6,7 @@ export default function projectCards() {
 
   return (
     <div
-      className="main-container project-cards columns is-multiline" // {projectData.map(projectData) => ("write code here for html and using seed file")}
+      className="main-container  project-cards columns is-multiline" // {projectData.map(projectData) => ("write code here for html and using seed file")}
       id="project-cards"
     >
       {projectData.map((project) => (
@@ -33,13 +33,16 @@ export default function projectCards() {
               </div>
             </div>
 
-            <div class="content">
-              {project.description}
-              <a href={project.repo}>#Github-repo</a>{" "}
-              <a href={project.demo}>& Demo App!</a>
-              <br />
-            </div>
+            <div class="content">{project.description}</div>
           </div>
+          <footer class="card-footer">
+            <a href={project.demo} className="card-footer-item">
+              Preview
+            </a>
+            <a href={project.repo} className="card-footer-item">
+              Source Code
+            </a>
+          </footer>
         </div>
       ))}
     </div>

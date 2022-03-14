@@ -4,7 +4,7 @@ import resume from "./images/D.Arce.pdf";
 
 export default function Nav({ currentPage, handlePageChange }) {
   return (
-    <div className="navbar-end">
+    <div className="navbar-end is-light is-fixed-top">
       <div className="navbar-brand navbar-end ">
         <a className="navbar-item " href="https://github.com/dnsarce21">
           {/* <img src="./assets/img/name.jpg" /> */}
@@ -35,6 +35,9 @@ export default function Nav({ currentPage, handlePageChange }) {
           >
             Home
           </a>
+          <a className="navbar-item" href="#about">
+            About
+          </a>
 
           <a
             className="navbar-item"
@@ -59,6 +62,7 @@ export default function Nav({ currentPage, handlePageChange }) {
               <a className="navbar-item" href="https://github.com/D-Y-A-G">
                 GitHub
               </a>
+              <a className="navbar-item">Blog (coming soon)</a>
               <a
                 className="navbar-item"
                 {...(currentPage === "Home" ? "nav-link active" : "nav-link")}

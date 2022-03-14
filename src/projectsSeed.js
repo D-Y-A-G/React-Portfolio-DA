@@ -14,7 +14,7 @@ export const projectData = [
     subtitle:
       "A solution for Food-Truck-Owners to built custom mobile applications",
     description:
-      "A back end application for an e-commerce clothing website that uses latest technologies to compete with other e-commerce companies.",
+      "A MERN Stack application that allows for everyday food truck owners to create their own custom application that helps enhance their bussiness. Food truck owners will have the ability to add menu items, customize order experience, and change prices with ease.",
     repo: "https://github.com/D-Y-A-G/food-truck-app-creator",
     demo: "https://food-truck-fix.herokuapp.com/",
   },
@@ -25,7 +25,7 @@ export const projectData = [
     title: "Concert Tracker",
     subtitle: "Find your favorite band and concert info!",
     description:
-      "Front-end application that allows users to search a band/artist for upcoming events, provide them with ticket information and top music videos.",
+      "Front-end application created by music lovers that allows users to search a band/artist for upcoming events, provide them with ticket information pricing and links with the top music videos based on search input.",
     repo: "https://github.com/D-Y-A-G/pj1-sam-dav-den",
     demo: "https://d-y-a-g.github.io/pj1-sam-dav-den/",
   },
@@ -36,7 +36,7 @@ export const projectData = [
     title: "K9Cupid",
     subtitle: "A social app for human's best friends!",
     description:
-      "A built from scratch application for doggies to help them socialize and find other dogs with similar attributes to make fun and lasting friendships.",
+      "A built from scratch application for doggies to help them socialize and find other dogs with similar personalities and attributes to make fun and lasting friendships.",
     repo: "https://github.com/D-Y-A-G/K9Cupid",
     demo: "https://k9-cupid-final.herokuapp.com/",
   },
