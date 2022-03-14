@@ -35,9 +35,6 @@ export default function Nav({ currentPage, handlePageChange }) {
           >
             Home
           </a>
-          <a className="navbar-item" href="#about">
-            About
-          </a>
 
           <a
             className="navbar-item"
