@@ -33,9 +33,13 @@ export default function projectCards() {
               </div>
             </div>
 
-            <div class="content">{project.description}</div>
+            {/* <div className="content">{project.description}</div> */}
+            <div>
+              <strong>Technology:</strong>
+              {project.technology}
+            </div>
           </div>
-          <footer class="card-footer">
+          <footer className="card-footer">
             <a href={project.demo} className="card-footer-item">
               Preview
             </a>

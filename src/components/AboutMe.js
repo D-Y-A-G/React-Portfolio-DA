@@ -26,9 +26,11 @@ export default function AboutMe() {
             <img className="is-rounded" src={denisImage} alt="Denis Portrait" />
           </figure>
         </div>
-        <h3 class="title is-2">About Me...</h3>
-        <h4 class="subtitle is-5">A little bit of my background</h4>
-        <div class="container">
+        <h3 class="title is-2 has-text-centered">About Me...</h3>
+        <h4 class="subtitle is-5 has-text-centered">
+          A little bit of my background
+        </h4>
+        <div class="container ">
           <p>
             Full stack web developer with Business Management and Finance
             experience educated at University of Texas at San Antonio. Skills in
